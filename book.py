@@ -9,7 +9,7 @@ all_books = []
 
 
 while True:
-    print("Welcome to Library Management System")
+
     print("0. Exit")
     print("1. Add Books")
     print("2. View All Books")
@@ -18,10 +18,10 @@ while True:
 
     all_books = restore_books_file.restore_all_books(all_books)
     
-    menu = input("Select any number: ")
+    menu = input("Select any option: ")
     
     if menu == "0":
-        print("Thanks for using Library Management System ")
+        print("Thanks")
         break
     elif menu == "1":
         all_books = add_books.add_books(all_books)
@@ -32,4 +32,4 @@ while True:
     elif menu == "4":
         delete_book_file.delete_books(all_books)
     else:
-        print("Choose a valid number")
+        print(" Plz Choose a valid number")
